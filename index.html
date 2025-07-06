@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com o menu de navegação -->
+    <header>
+  <nav>
+    <a href="#" onclick="mostrarSecao('sobre')">Sobre mim</a>
+    <a href="#" onclick="mostrarSecao('educacao')">Formação</a>
+    <a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a>
+    <a href="#" onclick="mostrarSecao('contato')">Contato</a>
+</nav>
+</header>
+    <!-- Seção "Sobre mim" (visão inicial do site) -->
+    <section id="sobre" class="secao ativa">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é Guilherme Passos. Sou aspirante a desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na Uninter. Sou mais introspectivo, porém bem-humorado. Meus hobbies incluem assistir a vídeos, acompanhar esportes como futebol e basquete e jogar no computador.</p>
+        <img src="Foto/fototrabalho.jpg" alt="Foto de Guilherme Passos" oncontextmenu="return false">
+    </section>
+    <!-- Seção "Formação Educacional" -->
+    <section id="educacao" class="secao">
+        <h2>Formação Educacional</h2>
+        <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+        <p><strong>Instituição:</strong> <a href="https://www.uninter.com" target="_blank">Uninter</a></p>
+        <p><strong>Status:</strong> Cursando (2025-2027)</p>
+        <p><strong>Certificados:</strong></p>
+        <!-- Lista de certificados com links para PDF -->
+        <ul>
+            <li>
+                Produtividade e Gestão do Tempo (Conquer)
+                <br>
+                <a href="Certificados/certificado1.pdf" target="_blank" rel="noopener noreferrer">Visualizar Certificado</a>
+            </li>
+            <li>
+                Inteligência Emocional 2.0 (Conquer)
+                <br>
+                <a href="Certificados/certificado2.pdf" target="_blank" rel="noopener noreferrer">Visualizar Certificado</a>
+            </li>
+            <li>
+                Comunicação e Oratória (Conquer)
+                <br>
+                <a href="Certificados/certificado3.pdf" target="_blank" rel="noopener noreferrer">Visualizar Certificado</a>
+            </li>
+            <li>
+                Produtividade Inteligente (Conquer)
+                <br>
+                <a href="Certificados/certificado4.pdf" target="_blank" rel="noopener noreferrer">Visualizar Certificado</a>
+            </li>
+            <li>
+                Formação em Liderança (Conquer)
+                <br>
+                <a href="Certificados/certificado5.pdf" target="_blank" rel="noopener noreferrer">Visualizar Certificado</a>
+            </li>
+            <li>
+                English Certificate C1 Advanced (EF Education First)
+                <br>
+                <a href="Certificados/EF SET Certificate.pdf" target="_blank" rel="noopener noreferrer">Visualizar Certificado</a>
+            </li>
+        </ul>
+    </section>
+     <!-- Seção "Portfólio" -->
+    <section id="portfolio" class="secao">
+        <h2>Portfólio</h2>
+        <p>Aqui estão alguns projetos desenvolvidos por mim:</p>
+        <ul>
+            <li>
+                <!-- Descrição de projeto de banco de dados -->
+                <strong>Banco de Dados</strong> - Trabalho dado pela faculdade (Uninter) em que construí um MER (Modelo Entidade-Relacionamento) de um Hotel e logo após implementei um Banco de dados de uma Locadora de Veículos utilizando MySQL.
+                <br>
+                <a href="BancodeDados/mer.png" target="_blank" rel="noopener noreferrer">Visualizar Diagrama MER</a>
+                <br>
+                <a href="BancodeDados/estrutura.sql" download="estrutura_banco.sql">Baixar Estrutura do Banco de Dados (SQL)</a>
+            </li>
+            <br>
+            <li>
+                <!-- Descrição do próprio site como projeto -->
+                <strong>Portfólio pessoal</strong> - Trabalho dado pela faculdade (Uninter) em que construí este site com links integrados na mesma página que levam a seções que dizem: "Sobre mim", "Formação Educacional", "Portfólio" e "Contato" utilizando HTML, CSS e Javascript sem uso de frameworks.
+                <br>
+                <a href="https://iug8.github.io/portfolio-gui-passos/" target="_blank" rel="noopener noreferrer" >Visualizar Website</a>
+            </li>
+        </ul>
+    </section>
+    <!-- Seção "Contato" -->
+    <section id="contato" class="secao">
+        <h2>Contato</h2>
+        <ul>
+        <!-- Lista com informações de contato e links -->
+            <li>Whatsapp: <a href="https://wa.me/5511984995194" target="_blank">(11) 98499-5194</a></li>
+            <li>E-mail: <a href="mailto:passos.guilherme0307@gmail.com">passos.guilherme0307@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/guilherme-passos-4ab095359/">https://www.linkedin.com/in/guilherme-passos-4ab095359/</a></li>
+            <li>Github: <a href="https://github.com/iug8" target="_blank">https://github.com/iug8</a></li>
+        </ul>
+        <!-- Formulário de contato -->
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <!-- Mensagem de confirmação de envio (aparece com Javascript) -->
+        <p id="mensagem-confirmacao" style="display: none; color: green; margin-top: 10px;">Mensagem enviada!</p>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Ocultar e mostrar */
+.secao {
+    display: none;
+}
+.secao.ativa {
+    display: block;
+}
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F6FF;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+}
+/* Menu de navegação */
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* Barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #8000FF;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+nav a:hover {
+    color: #6200CC;
+    border-bottom: 2px solid #6200CC;
+}
+/* Seções */
+section {
+    background-color: #FFFFFF;
+    max-width: 800px;
+    margin: 100px auto 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+/* Títulos */
+h2 {
+    color: #8000FF;
+    margin-bottom: 20px;
+}
+/* Links dentro das seções */
+section a {
+    color: #8000FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+section a:hover {
+    text-decoration: underline;
+}
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+form label {
+    font-weight: bold;
+    color: #8000FF;
+}
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #8000FF;
+    box-shadow: 0 0 5px rgba(128, 0, 255, 0.5);
+}
+form button {
+    background-color: #8000FF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form button:hover {
+    background-color: #6200CC;
+}
+/* Foto */
+img{
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8000FF;
+}
+
+
+
+
